@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { AlarmClock, Mail, MapPin, PhoneCall } from "lucide-react";
 
 export default function ContactPage() {
   const [form, setForm] = useState({ name: "", email: "", phone: "", service: "", message: "" });
@@ -43,20 +44,22 @@ export default function ContactPage() {
               {/* Map placeholder */}
               <div className="rounded-3xl overflow-hidden h-64 bg-navy/5 border border-navy/5 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-4xl mb-3">📍</div>
+                  <div className="mb-3 text-navy">
+                    <MapPin className="w-10 h-10" strokeWidth={1.75} />
+                  </div>
                   <p className="font-sans text-sm text-body">Surat, Gujarat</p>
                 </div>
               </div>
 
               {/* Info cards */}
               {[
-                { icon: "📍", label: "Office Address", value: "Ring Road, Vesu, Surat – 395 007, Gujarat, India" },
-                { icon: "📞", label: "Phone", value: "+91 98765 43210" },
-                { icon: "✉️", label: "Email", value: "info@rishilenterprise.in" },
-                { icon: "⏰", label: "Office Hours", value: "Mon – Sat: 9:30 AM – 6:30 PM IST" },
+                { icon: <MapPin className="w-8 h-8 text-navy" strokeWidth={1.75} />, label: "Office Address", value: "Ring Road, Vesu, Surat – 395 007, Gujarat, India" },
+                { icon: <PhoneCall className="w-8 h-8 text-navy" strokeWidth={1.75} />, label: "Phone", value: "+91 98765 43210" },
+                { icon: <Mail className="w-8 h-8 text-navy" strokeWidth={1.75} />, label: "Email", value: "info@sharmaenterprise.in" },
+                { icon: <AlarmClock className="w-8 h-8 text-navy" strokeWidth={1.75} />, label: "Office Hours", value: "Mon – Sat: 9:30 AM – 6:30 PM IST" },
               ].map((item) => (
                 <div key={item.label} className="bg-white rounded-2xl p-6 card-base flex items-start gap-5">
-                  <div className="text-2xl">{item.icon}</div>
+                  <div>{item.icon}</div>
                   <div>
                     <div className="font-sans text-[10px] font-bold uppercase tracking-[0.16em] text-body mb-1">{item.label}</div>
                     <div className="font-sans text-sm text-headline">{item.value}</div>
@@ -66,7 +69,7 @@ export default function ContactPage() {
 
               {/* Trust row */}
               <div className="flex flex-wrap gap-4 pt-2">
-                {["SEBI Registered", "15+ Years", "2000+ Clients"].map((t) => (
+                {["CA-Led Practice", "15+ Years", "2000+ Clients"].map((t) => (
                   <div key={t} className="bg-indigo-tint rounded-full px-4 py-2 font-sans text-[11px] font-semibold uppercase tracking-wide text-navy">
                     {t}
                   </div>

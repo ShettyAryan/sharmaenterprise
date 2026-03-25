@@ -34,7 +34,7 @@ export default function CTABanner() {
               <span className="italic font-light" style={{ color: "#b8c4ff" }}>Financial Future?</span>
             </h2>
             <p className="font-sans text-white/60 text-base leading-relaxed mb-10">
-              Join 2,000+ clients who trust Rishil Enterprise for their wealth management, tax planning, and investment needs. Book a complimentary 30-minute consultation today.
+              Speak to a Chartered Accountant for Income Tax, GST, audit, accounting, and compliance support. Book a complimentary 30-minute consultation to understand the right next steps.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">
               <Link href="/contact" className="btn-gold">

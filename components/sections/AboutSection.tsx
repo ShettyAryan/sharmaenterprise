@@ -4,8 +4,8 @@ import { useScrollReveal } from "@/lib/useScrollReveal";
 
 const stats = [
   { value: "15+", suffix: "", label: "Years of Expertise" },
-  { value: "₹500Cr+", suffix: "", label: "Assets Managed" },
   { value: "2000+", suffix: "", label: "Clients Served" },
+  { value: "10000+", suffix: "", label: "Returns & Filings" },
   { value: "98%", suffix: "", label: "Client Retention" },
 ];
 
@@ -19,16 +19,15 @@ export default function AboutSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-24">
         <div ref={headRef} className="reveal">
           <div className="section-label mb-6">
-            <span>About Rishil Enterprise</span>
+            <span>About Sharma Enterprise</span>
           </div>
           <h2
             className="font-serif text-headline leading-tight max-w-5xl mb-10"
             style={{ fontSize: "clamp(2rem, 3.5vw, 3.2rem)" }}
           >
-            Rishil Enterprise is a{" "}
-            <span className="italic-accent">full-spectrum financial advisory firm</span> —{" "}
-            <span className="italic-accent">guiding wealth</span>, protecting futures, and{" "}
-            <span className="italic-accent">optimising returns</span> for discerning clients across India.
+            Sharma Enterprise is a{" "}
+            <span className="italic-accent">Chartered Accountants firm</span> — helping individuals and businesses stay{" "}
+            <span className="italic-accent">tax-compliant</span>, audit-ready, and financially organised across India.
           </h2>
           <Link
             href="/about"

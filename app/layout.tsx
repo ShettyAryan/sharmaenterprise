@@ -18,9 +18,9 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Rishil Enterprise | Chartered Accountants & Wealth Advisors",
+  title: "Sharma Enterprise | Chartered Accountants",
   description:
-    "Rishil Enterprise — SEBI registered Chartered Accountancy and wealth management firm. Investment advisory, tax optimisation, and portfolio management for HNIs and businesses across India.",
+    "Sharma Enterprise — Chartered Accountants providing Income Tax, GST, audit, accounting, and compliance services for individuals, SMEs, and growing businesses across India.",
 };
 
 export default function RootLayout({

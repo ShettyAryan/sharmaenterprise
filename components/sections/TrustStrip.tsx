@@ -1,13 +1,14 @@
 export default function TrustStrip() {
   const badges = [
-    "SEBI Registered Investment Advisor",
-    "AMFI Registered Mutual Fund Distributor",
-    "IRDAI Authorised Insurance Partner",
-    "BSE / NSE Member",
-    "ISO 27001 Certified",
+    "Chartered Accountants (India)",
+    "Income Tax · ITR Filing",
+    "GST Registration & Returns",
+    "TDS · TCS Compliance",
+    "Tax Audit & Statutory Audit",
+    "ROC · MCA Compliance",
     "15+ Years of Trust",
     "2000+ Satisfied Clients",
-    "₹500 Cr+ AUM",
+    "Deadline-First Delivery",
   ];
 
   return (

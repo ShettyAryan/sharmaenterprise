@@ -1,28 +1,53 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import CTABanner from "@/components/sections/CTABanner";
+import { BookOpenText, Handshake, Leaf, Lock, Scale, Target } from "lucide-react";
 
 export const metadata = {
-  title: "About Us | Rishil Enterprise",
+  title: "About Us | Sharma Enterprise",
 };
 
 const values = [
-  { icon: "⚖️", title: "Integrity First", desc: "Every recommendation we make is driven by your interest, not ours. We are a fee-transparent advisory." },
-  { icon: "🎯", title: "Outcome Focused", desc: "We measure our success by your financial progress — not AUM gathered or products sold." },
-  { icon: "📚", title: "Continuous Learning", desc: "Markets evolve. Our team undergoes continuous training to stay ahead of regulatory and market changes." },
-  { icon: "🤝", title: "Long-Term Partnerships", desc: "Our average client relationship spans over 7 years. We build for decades, not quarters." },
-  { icon: "🔒", title: "Absolute Discretion", desc: "Your financial affairs are handled with the confidentiality of a private bank." },
-  { icon: "🌱", title: "Responsible Investing", desc: "We incorporate ESG factors in portfolio construction for clients who care about impact." },
+  {
+    icon: <Scale className="w-10 h-10 text-navy" strokeWidth={1.75} />,
+    title: "Integrity First",
+    desc: "Every recommendation we make is driven by your interest, not ours. We are a fee-transparent advisory.",
+  },
+  {
+    icon: <Target className="w-10 h-10 text-navy" strokeWidth={1.75} />,
+    title: "Outcome Focused",
+    desc: "We measure our success by your compliance readiness and clarity — not jargon, upsells, or avoidable follow-ups.",
+  },
+  {
+    icon: <BookOpenText className="w-10 h-10 text-navy" strokeWidth={1.75} />,
+    title: "Continuous Learning",
+    desc: "Laws evolve. Our team stays current on Income Tax, GST, and compliance updates so your decisions remain audit-ready.",
+  },
+  {
+    icon: <Handshake className="w-10 h-10 text-navy" strokeWidth={1.75} />,
+    title: "Long-Term Partnerships",
+    desc: "Our average client relationship spans over 7 years. We build for decades, not quarters.",
+  },
+  {
+    icon: <Lock className="w-10 h-10 text-navy" strokeWidth={1.75} />,
+    title: "Absolute Discretion",
+    desc: "Your financial affairs are handled with the confidentiality of a private bank.",
+  },
+  {
+    icon: <Leaf className="w-10 h-10 text-navy" strokeWidth={1.75} />,
+    title: "Responsible Investing",
+    desc: "We advise with long-term thinking — focusing on compliant, sustainable financial decisions for families and businesses.",
+  },
 ];
 
 const milestones = [
   { year: "2008", event: "Founded in Surat by CA Rishil Shah" },
-  { year: "2011", event: "SEBI Registration as Investment Adviser" },
-  { year: "2014", event: "₹100 Cr AUM milestone" },
-  { year: "2017", event: "Expanded to PMS and Direct Equity services" },
-  { year: "2020", event: "1000+ active client families" },
-  { year: "2022", event: "₹300 Cr AUM · Launched Wealth Basket product" },
-  { year: "2024", event: "₹500 Cr+ AUM · 2000+ clients · Team of 20+" },
+  { year: "2011", event: "Expanded into GST, audits, and compliance support for SMEs" },
+  { year: "2014", event: "Built a structured documentation and review process" },
+  { year: "2017", event: "Strengthened corporate compliance and advisory practice" },
+  { year: "2020", event: "1000+ active client relationships across India" },
+  { year: "2022", event: "Streamlined client workflows with checklists and timelines" },
+  { year: "2024", event: "2000+ clients · Team growth · Faster turnaround SLAs" },
 ];
 
 const team = [
@@ -62,7 +87,7 @@ export default function AboutPage() {
                   Driven by <span className="italic" style={{ color: "#b8c4ff" }}>Purpose.</span>
                 </h1>
                 <p className="font-sans text-white/60 text-lg leading-relaxed max-w-xl">
-                  Since 2008, Rishil Enterprise has been the financial backbone of families and businesses across Gujarat and beyond — combining CA rigour with investment wisdom.
+                  Since 2008, Sharma Enterprise has supported families and businesses across Gujarat and beyond — combining CA rigour with practical, compliance-first advice.
                 </p>
               </div>
             </div>
@@ -99,23 +124,23 @@ export default function AboutPage() {
                 style={{ fontSize: "clamp(2rem, 3vw, 3rem)" }}
               >
                 CA Rishil Shah —{" "}
-                <span className="italic-accent">Architect of Wealth</span>
+                <span className="italic-accent">CA-led Advisory</span>
               </h2>
               <div className="font-sans text-body text-base leading-relaxed space-y-5">
                 <p>
-                  A Fellow Chartered Accountant with over 15 years of experience in wealth management, tax advisory, and investment planning, Rishil founded this firm with a singular belief: that every family deserves institutional-quality financial advice.
+                  A Fellow Chartered Accountant with over 15 years of experience across taxation, audits, and advisory, Rishil founded this firm with a singular belief: that every family and business deserves reliable, deadline-driven professional support.
                 </p>
                 <p>
-                  His approach combines the analytical rigour of a CA with the long-term thinking of a family office. He has personally guided clients through market cycles, business transitions, succession events, and generational wealth transfers.
+                  His approach combines CA-grade rigour with practical execution — guiding clients through assessments, notices, reconciliations, statutory compliances, and year-end closures.
                 </p>
                 <p>
-                  A member of the ICAI, he holds additional certifications in portfolio management and is a certified financial planner.
+                  A member of the ICAI, he focuses on building processes that keep clients audit-ready and documentation-clean.
                 </p>
               </div>
               <div className="mt-10 flex items-center gap-5">
                 <div className="gold-divider" />
                 <span className="font-sans text-[10px] uppercase tracking-[0.18em] text-body font-semibold">
-                  FCA · CFP · SEBI Registered Investment Adviser
+                  FCA · ICAI Member · Tax & Compliance
                 </span>
               </div>
             </div>
@@ -173,7 +198,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {values.map((v) => (
                 <div key={v.title} className="p-8 rounded-2xl border border-black/5 hover:bg-indigo-tint transition-colors group">
-                  <div className="text-3xl mb-5">{v.icon}</div>
+                  <div className="mb-5">{v.icon}</div>
                   <h3 className="font-serif text-headline text-xl mb-3 group-hover:text-navy transition-colors">{v.title}</h3>
                   <p className="font-sans text-body text-sm leading-relaxed">{v.desc}</p>
                 </div>

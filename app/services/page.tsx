@@ -2,16 +2,9 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import CTABanner from "@/components/sections/CTABanner";
 import Link from "next/link";
+import { services } from "@/lib/catalog";
 
-const services = [
-  { icon: "📈", title: "Investment Portfolio", slug: "investment-portfolio", desc: "Strategically diversified portfolios built around your risk profile, time horizon, and life goals. We manage equity, debt, hybrid, and alternative assets under one coordinated strategy.", benefits: ["Risk-adjusted portfolio construction", "Quarterly rebalancing", "Direct & regular plan advisory"] },
-  { icon: "🛡️", title: "Insurance Policies", slug: "insurance-policies", desc: "Comprehensive life, health, term, and asset protection plans to secure your family's financial future against unforeseen events.", benefits: ["Term, ULIP & endowment plans", "Health & critical illness cover", "Business keyman insurance"] },
-  { icon: "🧺", title: "Wealth Basket", slug: "wealth-basket", desc: "Curated, theme-based investment baskets built around high-conviction sectors — technology, consumption, ESG, and more — for focused, transparent investing.", benefits: ["Sector-focused model portfolios", "Transparent holdings", "Quarterly basket reviews"] },
-  { icon: "🎯", title: "Targeted Investment", slug: "targeted-investment", desc: "Goal-oriented financial planning for specific life milestones — children's education, retirement, home purchase, or business succession.", benefits: ["Goal-linked asset allocation", "Timeline-based strategy", "Regular progress reviews"] },
-  { icon: "📋", title: "Tax Optimisation", slug: "tax-optimisation", desc: "Expert CA-led tax structuring and planning to minimise liability, maximise post-tax returns, and ensure full regulatory compliance across direct and indirect taxes.", benefits: ["ITR filing & planning", "HUF & trust structuring", "Capital gains optimisation"] },
-];
-
-export const metadata = { title: "Services | Rishil Enterprise" };
+export const metadata = { title: "Services | Sharma Enterprise" };
 
 export default function ServicesPage() {
   return (
@@ -26,7 +19,7 @@ export default function ServicesPage() {
               Comprehensive <span className="italic-accent">Financial Services</span> Tailored to You
             </h1>
             <p className="font-sans text-body text-base leading-relaxed mt-6 max-w-xl">
-              From tax planning to portfolio management — Rishil Enterprise offers a complete spectrum of financial advisory services for HNIs, businesses, and salaried professionals.
+              From Income Tax and GST to audits and ongoing compliance — Sharma Enterprise provides end-to-end CA services for individuals, SMEs, and growing businesses.
             </p>
           </div>
 
@@ -35,9 +28,11 @@ export default function ServicesPage() {
             {services.map((s, i) => (
               <div key={s.slug} className="bg-white rounded-3xl p-10 card-base border border-black/5 grid grid-cols-1 lg:grid-cols-3 gap-8">
                 <div className="lg:col-span-2">
-                  <div className="text-4xl mb-5">{s.icon}</div>
+                  <div className="mb-5">
+                    <s.Icon className="w-10 h-10 text-navy" strokeWidth={1.75} />
+                  </div>
                   <h2 className="font-serif text-headline text-3xl mb-4">{s.title}</h2>
-                  <p className="font-sans text-body text-base leading-relaxed mb-6">{s.desc}</p>
+                  <p className="font-sans text-body text-base leading-relaxed mb-6">{s.description}</p>
                   <Link
                     href={`/services/${s.slug}`}
                     className="btn-navy inline-flex"

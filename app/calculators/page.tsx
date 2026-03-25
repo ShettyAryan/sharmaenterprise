@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { Banknote, PieChart } from "lucide-react";
 
 function SIPCalculator() {
   const [monthly, setMonthly] = useState(5000);
@@ -99,8 +100,20 @@ function FDCalculator() {
 }
 
 const calculators = [
-  { id: "sip", icon: "💹", name: "SIP Calculator", desc: "Estimate your mutual fund SIP maturity value", component: <SIPCalculator /> },
-  { id: "fd", icon: "🏦", name: "FD Calculator", desc: "Calculate fixed deposit maturity amount", component: <FDCalculator /> },
+  {
+    id: "sip",
+    icon: <PieChart className="w-6 h-6" strokeWidth={1.75} />,
+    name: "SIP Calculator",
+    desc: "Estimate your mutual fund SIP maturity value",
+    component: <SIPCalculator />,
+  },
+  {
+    id: "fd",
+    icon: <Banknote className="w-6 h-6" strokeWidth={1.75} />,
+    name: "FD Calculator",
+    desc: "Calculate fixed deposit maturity amount",
+    component: <FDCalculator />,
+  },
 ];
 
 export default function CalculatorsPage() {
@@ -133,7 +146,7 @@ export default function CalculatorsPage() {
                     : "bg-white text-body border-black/10 hover:border-navy/20"
                 }`}
               >
-                <span className="text-xl">{c.icon}</span>
+                <span className={`inline-flex items-center justify-center ${active === c.id ? "text-white" : "text-navy"}`}>{c.icon}</span>
                 {c.name}
               </button>
             ))}

@@ -61,7 +61,7 @@ export default function HeroSection() {
             <div ref={headlineRef} className="mb-4 flex items-center gap-2">
               <span style={{ color: "#1A3FBF", fontSize: "0.6rem" }}>●</span>
               <span className="font-sans text-[10px] font-semibold tracking-[0.2em] uppercase text-white/50">
-                Private Wealth Advisory
+                Chartered Accountants · Tax & Compliance
               </span>
             </div>
 
@@ -72,20 +72,20 @@ export default function HeroSection() {
             >
               Financial Clarity.{" "}
               <span className="italic" style={{ color: "#b8c4ff" }}>
-                Wealth That
+                Compliance
               </span>
               <br />
               <span className="italic" style={{ color: "#b8c4ff" }}>
-                Works
+                Made
               </span>{" "}
-              For You.
+              Simple.
             </h1>
 
             <p
               ref={subRef}
               className="font-sans text-white/60 text-base leading-relaxed mb-10 max-w-md"
             >
-              Rishil Enterprise — trusted by 2,000+ clients for investment advisory, tax strategy, and portfolio management across India.
+              Sharma Enterprise — CA-led support for Income Tax, GST, audit, accounting, and business compliance with responsive communication and clean documentation.
             </p>
 
             <div ref={ctaRef} className="flex flex-wrap gap-4">
@@ -106,8 +106,8 @@ export default function HeroSection() {
             >
               {[
                 { value: "15+", label: "Years of Expertise" },
-                { value: "₹500Cr+", label: "Assets Under Management" },
                 { value: "2000+", label: "Clients Served" },
+                { value: "10000+", label: "Filings & Compliance Tasks" },
               ].map((stat, i) => (
                 <div key={stat.label}>
                   {i > 0 && <div className="gold-divider my-7" />}

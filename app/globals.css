@@ -189,3 +189,9 @@ body {
   transform: translateY(0) scaleY(1);
   pointer-events: all;
 }
+
+.dropdown-open .dropdown-panel {
+  opacity: 1;
+  transform: translateY(0) scaleY(1);
+  pointer-events: all;
+}

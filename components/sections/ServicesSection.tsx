@@ -1,39 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useScrollReveal } from "@/lib/useScrollReveal";
-
-const services = [
-  {
-    icon: "📈",
-    title: "Investment Portfolio",
-    desc: "Strategically diversified portfolios built to balance risk and maximise long-term returns for HNIs and families.",
-    href: "/services/investment-portfolio",
-  },
-  {
-    icon: "🛡️",
-    title: "Insurance Policies",
-    desc: "Comprehensive life, health, and asset protection plans to safeguard what matters most.",
-    href: "/services/insurance-policies",
-  },
-  {
-    icon: "🧺",
-    title: "Wealth Basket",
-    desc: "Curated, theme-based investment baskets focused on high-conviction sectors and sustainable alpha.",
-    href: "/services/wealth-basket",
-  },
-  {
-    icon: "🎯",
-    title: "Targeted Investment",
-    desc: "Goal-oriented financial planning for retirement, education, succession, and life milestones.",
-    href: "/services/targeted-investment",
-  },
-  {
-    icon: "📋",
-    title: "Tax Optimisation",
-    desc: "Expert CA-led structuring to minimise tax liability and maximise post-tax wealth.",
-    href: "/services/tax-optimisation",
-  },
-];
+import { services } from "@/lib/catalog";
 
 export default function ServicesSection() {
   const headRef = useScrollReveal();
@@ -64,20 +32,22 @@ export default function ServicesSection() {
       <div ref={gridRef} className="reveal grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {services.map((s, i) => (
           <div
-            key={s.title}
+            key={s.slug}
             className="bg-white p-9 rounded-2xl card-base group"
             style={{ transitionDelay: `${i * 60}ms` }}
           >
-            <div className="text-3xl mb-7">{s.icon}</div>
+            <div className="mb-7">
+              <s.Icon className="w-9 h-9 text-navy" strokeWidth={1.75} />
+            </div>
             <h3
               className="font-serif text-headline mb-3 group-hover:text-navy transition-colors"
               style={{ fontSize: "1.5rem" }}
             >
               {s.title}
             </h3>
-            <p className="font-sans text-body text-sm leading-relaxed mb-8">{s.desc}</p>
+            <p className="font-sans text-body text-sm leading-relaxed mb-8">{s.description}</p>
             <Link
-              href={s.href}
+              href={`/services/${s.slug}`}
               className="font-sans text-[11px] font-bold uppercase tracking-[0.16em] text-navy-light hover:text-navy transition-colors inline-flex items-center gap-2"
             >
               Explore <span>→</span>

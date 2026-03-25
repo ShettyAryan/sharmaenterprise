@@ -21,7 +21,7 @@ export default function NewsletterSection() {
         >
           <div className="max-w-md">
             <div className="section-label mb-4">
-              <span>The Rishil Perspective</span>
+              <span>The Sharma Perspective</span>
             </div>
             <h3
               className="font-serif text-headline leading-tight mb-3"

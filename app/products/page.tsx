@@ -2,19 +2,9 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import CTABanner from "@/components/sections/CTABanner";
 import Link from "next/link";
+import { products } from "@/lib/catalog";
 
-const products = [
-  { icon: "💹", name: "Mutual Fund", slug: "mutual-fund", desc: "Access to 40+ fund houses and 1000+ schemes. SIP, SWP, lumpsum, and STP — all through a single advisory relationship.", tag: "Most Popular" },
-  { icon: "🛡️", name: "Insurance", slug: "insurance", desc: "Life, term, health, critical illness, and ULIP plans from leading insurers. Needs-based, not commission-driven recommendations." },
-  { icon: "📊", name: "PMS", slug: "pms", desc: "Portfolio Management Services — professionally managed equity portfolios for investors with ₹50L+ investable surplus.", tag: "HNI" },
-  { icon: "📈", name: "Direct Equity", slug: "direct-equity", desc: "Research-backed stock recommendations and portfolio construction using fundamental and macro analysis across NSE/BSE." },
-  { icon: "🏦", name: "Fixed Deposit", slug: "fixed-deposit", desc: "Bank and corporate FDs with competitive rates. Regular income, capital safety, and flexible tenure options." },
-  { icon: "📜", name: "Bonds", slug: "bonds", desc: "Government securities, PSU bonds, and corporate bonds. Fixed income with predictable returns for capital preservation." },
-  { icon: "🧺", name: "Smallcase", slug: "smallcase", desc: "Invest in curated model portfolios on Smallcase — sector themes, market-cap strategies, and factor-based approaches.", tag: "New" },
-  { icon: "💧", name: "LiquiLoans", slug: "liquiloans", desc: "P2P lending through LiquiLoans for investors seeking higher yield fixed-income instruments beyond traditional FDs." },
-];
-
-export const metadata = { title: "Products | Rishil Enterprise" };
+export const metadata = { title: "Products | Sharma Enterprise" };
 
 export default function ProductsPage() {
   return (
@@ -47,9 +37,11 @@ export default function ProductsPage() {
                     </span>
                   </div>
                 )}
-                <div className="text-4xl mb-6">{p.icon}</div>
+                <div className="mb-6">
+                  <p.Icon className="w-10 h-10 text-navy" strokeWidth={1.75} />
+                </div>
                 <h2 className="font-serif text-headline text-xl mb-3 group-hover:text-navy transition-colors">{p.name}</h2>
-                <p className="font-sans text-body text-sm leading-relaxed mb-6">{p.desc}</p>
+                <p className="font-sans text-body text-sm leading-relaxed mb-6">{p.description}</p>
                 <div className="font-sans text-[11px] font-bold uppercase tracking-[0.14em] text-navy-light group-hover:text-navy transition-colors inline-flex items-center gap-1.5">
                   Explore →
                 </div>

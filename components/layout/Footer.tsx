@@ -8,21 +8,21 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand */}
           <div className="space-y-6">
-            <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3">
               <div className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center">
-                <span className="font-serif text-white text-lg font-semibold">R</span>
+                <span className="font-serif text-white text-lg font-semibold">S</span>
               </div>
               <div className="flex flex-col leading-none">
-                <span className="font-serif text-white text-xl font-semibold">Rishil</span>
+                <span className="font-serif text-white text-xl font-semibold">Sharma</span>
                 <span className="font-sans text-white/50 text-[10px] tracking-[0.2em] uppercase">Enterprise</span>
               </div>
             </div>
             <p className="font-sans text-white/60 text-sm leading-relaxed">
-              SEBI registered wealth advisory and chartered accountancy firm serving discerning clients across India since 2008.
+              Chartered Accountants firm delivering Income Tax, GST, audit, accounting, and compliance services with timely communication and clean documentation.
             </p>
             <div className="gold-divider" />
             <div className="font-sans text-white/40 text-[10px] tracking-[0.15em] uppercase">
-              SEBI Reg. No. INH000000000 · AMFI Registered
+              ICAI Ethics · Confidentiality · Deadline-First Delivery
             </div>
           </div>
 
@@ -68,8 +68,8 @@ export default function Footer() {
                 <a href="tel:+919876543210" className="font-sans text-sm text-white/60 hover:text-white transition-colors block">
                   +91 98765 43210
                 </a>
-                <a href="mailto:info@rishilenterprise.in" className="font-sans text-sm text-white/60 hover:text-white transition-colors block">
-                  info@rishilenterprise.in
+                <a href="mailto:info@sharmaenterprise.in" className="font-sans text-sm text-white/60 hover:text-white transition-colors block">
+                  info@sharmaenterprise.in
                 </a>
               </div>
               <div className="flex items-center gap-3 pt-2">
@@ -99,7 +99,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="font-sans text-white/30 text-xs tracking-wide">
-            © {new Date().getFullYear()} Rishil Enterprise. All rights reserved. Investments are subject to market risks.
+            © {new Date().getFullYear()} Sharma Enterprise. All rights reserved. This website is for informational purposes only and does not constitute professional advice.
           </p>
           <div className="flex items-center gap-6">
             {["Privacy Policy", "Terms of Service", "Disclaimer"].map((item) => (

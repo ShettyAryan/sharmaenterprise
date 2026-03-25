@@ -4,7 +4,7 @@ import { useScrollReveal } from "@/lib/useScrollReveal";
 const testimonials = [
   {
     quote:
-      "Rishil Enterprise completely restructured our family's portfolio. The tax savings alone in the first year were significant. They truly understand HNI requirements.",
+      "Sharma Enterprise streamlined our bookkeeping, GST compliance, and year-end tax filing. The process was organised, timely, and the communication was clear throughout.",
     name: "Suresh Mehta",
     role: "Textile Manufacturer, Surat",
     initials: "SM",
@@ -18,7 +18,7 @@ const testimonials = [
   },
   {
     quote:
-      "As an NRI investing back in India, I needed someone I could trust completely. Rishil Enterprise has been that partner for the last 8 years. Impeccable service.",
+      "As an NRI with Indian income, I needed reliable support for compliance, documentation, and timely filings. Sharma Enterprise has been dependable and detail-oriented for years.",
     name: "Raj Patel",
     role: "NRI Investor, London",
     initials: "RP",

@@ -12,7 +12,7 @@ export default function ApproachSection() {
           {/* Left */}
           <div ref={leftRef} className="reveal lg:col-span-5">
             <div className="section-label mb-6">
-              <span>The Rishil Approach</span>
+              <span>The Sharma Approach</span>
             </div>
             <h2
               className="font-serif text-headline leading-tight mb-8"
@@ -25,10 +25,10 @@ export default function ApproachSection() {
             </h2>
             <div className="font-sans text-body text-base leading-relaxed space-y-5 max-w-md">
               <p>
-                We believe true wealth management is not found in market trends or product quotas — it lives in the timeless principles of disciplined growth, risk mitigation, and patient compounding.
+                We believe the best professional advice is not just “what to do”, but “how to do it right” — with clear documentation, timely compliance, and practical guidance you can act on.
               </p>
               <p>
-                Every portfolio we manage is treated as a private ledger of a family's legacy — requiring intellectual rigour, absolute confidentiality, and a long horizon.
+                Every file we handle — returns, audits, GST, or ROC compliances — is treated with CA-grade rigour, strict confidentiality, and a commitment to deadlines.
               </p>
             </div>
             <div className="mt-12 flex items-center gap-5">

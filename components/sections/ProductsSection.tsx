@@ -1,17 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useScrollReveal } from "@/lib/useScrollReveal";
-
-const products = [
-  { icon: "💹", name: "Mutual Fund", desc: "SIP & lumpsum across equity, debt, and hybrid funds" },
-  { icon: "🛡️", name: "Insurance", desc: "Life, term, health & ULIP solutions" },
-  { icon: "📊", name: "PMS", desc: "Portfolio Management Services for HNIs" },
-  { icon: "📈", name: "Direct Equity", desc: "NSE/BSE listed equity with advisory" },
-  { icon: "🏦", name: "Fixed Deposit", desc: "Bank & corporate FD with competitive rates" },
-  { icon: "📜", name: "Bonds", desc: "Government, PSU & corporate bonds" },
-  { icon: "🧺", name: "Smallcase", desc: "Curated model portfolios on smallcase" },
-  { icon: "💧", name: "LiquiLoans", desc: "P2P lending for higher yield instruments" },
-];
+import { products } from "@/lib/catalog";
 
 export default function ProductsSection() {
   const headRef = useScrollReveal();
@@ -45,15 +35,17 @@ export default function ProductsSection() {
           {products.map((p, i) => (
             <Link
               key={p.name}
-              href={`/products/${p.name.toLowerCase().replace(/ /g, "-")}`}
+              href={`/products/${p.slug}`}
               className="bg-white rounded-2xl p-7 card-base group block"
               style={{ transitionDelay: `${i * 50}ms` }}
             >
-              <div className="text-3xl mb-5">{p.icon}</div>
+              <div className="mb-5">
+                <p.Icon className="w-9 h-9 text-navy" strokeWidth={1.75} />
+              </div>
               <h3 className="font-serif text-headline text-xl mb-2 group-hover:text-navy transition-colors">
                 {p.name}
               </h3>
-              <p className="font-sans text-body text-xs leading-relaxed">{p.desc}</p>
+              <p className="font-sans text-body text-xs leading-relaxed">{p.description}</p>
               <div className="mt-5 text-navy-light font-sans text-[11px] font-bold uppercase tracking-[0.14em] group-hover:gap-2 transition-all inline-flex items-center gap-1">
                 Explore →
               </div>

@@ -1,36 +1,37 @@
 "use client";
 import { useScrollReveal } from "@/lib/useScrollReveal";
+import { BrainCircuit, Lock, MapPin, PhoneCall, RefreshCw, Scale } from "lucide-react";
 
 const pillars = [
   {
-    icon: "⚖️",
-    title: "SEBI Registered & Compliant",
-    desc: "Fully regulated under SEBI's Investment Adviser framework. Your interests are protected by law, not just promise.",
+    icon: <Scale className="w-9 h-9 text-navy" strokeWidth={1.75} />,
+    title: "Ethics-First Practice",
+    desc: "We follow professional ethics, documentation discipline, and confidentiality as non-negotiables — with clear communication at every step.",
   },
   {
-    icon: "🧠",
-    title: "Personalised Advisory, Not Algorithms",
-    desc: "Every portfolio is hand-crafted by our CA team. No robo-advisors. No templated plans. Just tailored strategy.",
+    icon: <BrainCircuit className="w-9 h-9 text-navy" strokeWidth={1.75} />,
+    title: "CA-Led, Practical Advice",
+    desc: "No jargon. No generic templates. Just clear, India-specific guidance you can implement with minimal back-and-forth.",
   },
   {
-    icon: "🔄",
+    icon: <RefreshCw className="w-9 h-9 text-navy" strokeWidth={1.75} />,
     title: "End-to-End Financial Management",
-    desc: "From tax filing to portfolio rebalancing — we cover the complete financial lifecycle under one trusted roof.",
+    desc: "From ITR and GST to audits and ROC compliances — we support the complete finance and compliance lifecycle under one roof.",
   },
   {
-    icon: "🔒",
+    icon: <Lock className="w-9 h-9 text-navy" strokeWidth={1.75} />,
     title: "Absolute Confidentiality",
-    desc: "Your financial affairs are handled with institutional-grade discretion. We operate as a private ledger.",
+    desc: "Your financial documents and disclosures are handled with strict confidentiality and controlled access.",
   },
   {
-    icon: "📍",
+    icon: <MapPin className="w-9 h-9 text-navy" strokeWidth={1.75} />,
     title: "Deep Local Expertise",
-    desc: "Rooted in Gujarat, we understand the financial nuances of Indian businesses, HUFs, and family offices.",
+    desc: "Rooted in Gujarat, we understand the nuances of Indian businesses, proprietors, partnerships, HUFs, and companies.",
   },
   {
-    icon: "📞",
+    icon: <PhoneCall className="w-9 h-9 text-navy" strokeWidth={1.75} />,
     title: "Dedicated Relationship Manager",
-    desc: "A single point of contact who knows your portfolio, your goals, and is always reachable.",
+    desc: "A single point of contact who knows your case history, deadlines, and documentation — and is reachable when you need help.",
   },
 ];
 
@@ -49,7 +50,7 @@ export default function WhySection() {
             className="font-serif text-headline leading-tight"
             style={{ fontSize: "clamp(2.2rem, 3.5vw, 3.5rem)" }}
           >
-            The <span className="italic-accent">Rishil Difference</span> —<br />
+            The <span className="italic-accent">Sharma Difference</span> —<br />
             Discipline over noise.
           </h2>
         </div>
@@ -61,7 +62,7 @@ export default function WhySection() {
               className="p-8 rounded-2xl border border-black/5 hover:bg-indigo-tint transition-colors duration-300 group"
               style={{ transitionDelay: `${i * 60}ms` }}
             >
-              <div className="text-3xl mb-6">{p.icon}</div>
+              <div className="mb-6">{p.icon}</div>
               <h3
                 className="font-serif text-headline mb-3 group-hover:text-navy transition-colors"
                 style={{ fontSize: "1.25rem" }}

@@ -5,16 +5,16 @@ const images = [
   { src: "https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=800", caption: "Annual Client Appreciation Evening 2024", category: "Events", tall: true },
   { src: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800", caption: "Our Surat Office", category: "Office" },
   { src: "https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?q=80&w=800", caption: "Team Strategy Session", category: "Office", tall: true },
-  { src: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800", caption: "SEBI Certification Ceremony 2023", category: "Awards" },
+  { src: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800", caption: "Professional Training & Certification — 2023", category: "Awards" },
   { src: "https://images.unsplash.com/photo-1560472355-536de3962603?q=80&w=800", caption: "Client Portfolio Review Meeting", category: "Client Meets", tall: true },
-  { src: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800", caption: "Wealth Management Seminar — Surat 2024", category: "Events" },
+  { src: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800", caption: "Tax & Compliance Seminar — Surat 2024", category: "Events" },
   { src: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800", caption: "Board of Advisors Meeting Q4 2024", category: "Office" },
   { src: "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=800", caption: "Best CA Firm Award — Gujarat 2023", category: "Awards", tall: true },
 ];
 
 const tabs = ["All", "Events", "Office", "Client Meets", "Awards"];
 
-export const metadata = { title: "Gallery | Rishil Enterprise" };
+export const metadata = { title: "Gallery | Sharma Enterprise" };
 
 export default function GalleryPage() {
   return (
@@ -25,7 +25,7 @@ export default function GalleryPage() {
           <div className="mb-14">
             <div className="section-label mb-4"><span>Our Moments</span></div>
             <h1 className="font-serif text-headline" style={{ fontSize: "clamp(2.5rem, 5vw, 4rem)", fontWeight: 300 }}>
-              Life at <span className="italic-accent">Rishil Enterprise</span>
+              Life at <span className="italic-accent">Sharma Enterprise</span>
             </h1>
           </div>
 
