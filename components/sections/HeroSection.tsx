@@ -24,7 +24,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 sm:pt-24 pb-8 sm:pb-10">
+    <section className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 sm:pt-24 pb-8 sm:pb-10">
       <div
         className="relative rounded-4xl overflow-hidden flex items-center min-h-[540px] sm:h-[calc(100svh-9.5rem)] sm:min-h-[620px]"
         style={{ boxShadow: "0 24px 80px rgba(13,31,92,0.18)" }}
