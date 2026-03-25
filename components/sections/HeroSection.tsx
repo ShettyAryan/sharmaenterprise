@@ -26,7 +26,7 @@ export default function HeroSection() {
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16">
       <div
-        className="relative min-h-[88vh] rounded-4xl overflow-hidden flex items-center"
+        className="relative min-h-[80vh] rounded-4xl overflow-hidden flex items-center"
         style={{ boxShadow: "0 24px 80px rgba(13,31,92,0.18)" }}
       >
         {/* Background */}
@@ -55,7 +55,7 @@ export default function HeroSection() {
           style={{ background: "radial-gradient(circle, #1A3FBF, transparent 70%)", filter: "blur(60px)" }} />
 
         {/* Content */}
-        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 px-8 sm:px-12 lg:px-20 w-full py-20">
+        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 px-8 sm:px-12 lg:px-20 w-full py-10">
           {/* Left */}
           <div className="max-w-xl">
             <div ref={headlineRef} className="mb-4 flex items-center gap-2">
@@ -68,7 +68,7 @@ export default function HeroSection() {
             <h1
               ref={headlineRef}
               className="font-serif text-white leading-[1.08] mb-6"
-              style={{ fontSize: "clamp(3rem, 5.5vw, 5rem)", fontWeight: 300 }}
+              style={{ fontSize: "clamp(3rem, 4.5vw, 5rem)", fontWeight: 300 }}
             >
               Financial Clarity.{" "}
               <span className="italic" style={{ color: "#b8c4ff" }}>
