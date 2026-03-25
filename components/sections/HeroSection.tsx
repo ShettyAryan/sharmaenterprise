@@ -24,9 +24,9 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16">
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 sm:pt-24 pb-8 sm:pb-10">
       <div
-        className="relative min-h-[80vh] rounded-4xl overflow-hidden flex items-center"
+        className="relative rounded-4xl overflow-hidden flex items-center min-h-[540px] sm:h-[calc(100svh-9.5rem)] sm:min-h-[620px]"
         style={{ boxShadow: "0 24px 80px rgba(13,31,92,0.18)" }}
       >
         {/* Background */}
@@ -55,7 +55,7 @@ export default function HeroSection() {
           style={{ background: "radial-gradient(circle, #1A3FBF, transparent 70%)", filter: "blur(60px)" }} />
 
         {/* Content */}
-        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 px-8 sm:px-12 lg:px-20 w-full py-10">
+        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 px-6 sm:px-10 lg:px-16 w-full py-10 sm:py-12 lg:py-16">
           {/* Left */}
           <div className="max-w-xl">
             <div ref={headlineRef} className="mb-4 flex items-center gap-2">
@@ -68,7 +68,7 @@ export default function HeroSection() {
             <h1
               ref={headlineRef}
               className="font-serif text-white leading-[1.08] mb-6"
-              style={{ fontSize: "clamp(3rem, 4.5vw, 5rem)", fontWeight: 300 }}
+              style={{ fontSize: "clamp(2.35rem, 5vw, 5rem)", fontWeight: 300 }}
             >
               Financial Clarity.{" "}
               <span className="italic" style={{ color: "#b8c4ff" }}>
@@ -83,12 +83,12 @@ export default function HeroSection() {
 
             <p
               ref={subRef}
-              className="font-sans text-white/60 text-base leading-relaxed mb-10 max-w-md"
+              className="font-sans text-white/60 text-sm sm:text-base leading-relaxed mb-8 sm:mb-10 max-w-md"
             >
               Sharma Enterprise — CA-led support for Income Tax, GST, audit, accounting, and business compliance with responsive communication and clean documentation.
             </p>
 
-            <div ref={ctaRef} className="flex flex-wrap gap-4">
+            <div ref={ctaRef} className="flex flex-col sm:flex-row sm:flex-wrap gap-3 sm:gap-4">
               <Link href="/services" className="btn-navy bg-white text-navy hover:bg-white/90" style={{ color: "#0D1F5C", background: "white" }}>
                 Explore Services →
               </Link>
@@ -99,9 +99,9 @@ export default function HeroSection() {
           </div>
 
           {/* Right — Glass stat card */}
-          <div ref={cardRef} className="lg:flex lg:items-center lg:justify-end">
+          <div ref={cardRef} className="lg:flex lg:items-center lg:justify-end justify-self-start sm:justify-self-center lg:justify-self-end">
             <div
-              className="glass rounded-3xl p-10 w-full max-w-xs shadow-2xl"
+              className="glass rounded-3xl p-7 sm:p-10 w-full max-w-[22rem] sm:max-w-xs shadow-2xl"
               style={{ border: "1px solid rgba(255,255,255,0.2)" }}
             >
               {[
@@ -110,7 +110,7 @@ export default function HeroSection() {
                 { value: "10000+", label: "Filings & Compliance Tasks" },
               ].map((stat, i) => (
                 <div key={stat.label}>
-                  {i > 0 && <div className="gold-divider my-7" />}
+                  {i > 0 && <div className="gold-divider my-6 sm:my-7" />}
                   <div
                     className="font-serif text-navy font-medium"
                     style={{ fontSize: "clamp(1.8rem, 3vw, 2.4rem)" }}

@@ -6,9 +6,9 @@ export default function ApproachSection() {
   const rightRef = useScrollReveal();
 
   return (
-    <section className="bg-offwhite py-28 overflow-hidden">
+    <section className="bg-offwhite py-20 sm:py-24 lg:py-28 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           {/* Left */}
           <div ref={leftRef} className="reveal lg:col-span-5">
             <div className="section-label mb-6">
@@ -43,17 +43,17 @@ export default function ApproachSection() {
           <div ref={rightRef} className="reveal delay-200 lg:col-span-7 relative">
             <div className="relative">
               {/* Main image */}
-              <div className="rounded-3xl overflow-hidden shadow-hero -rotate-1 relative z-10 w-4/5">
+              <div className="rounded-3xl overflow-hidden shadow-hero -rotate-1 relative z-10 w-full sm:w-4/5">
                 <img
                   src="https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=1974&auto=format&fit=crop"
                   alt="Financial advisory meeting"
-                  className="w-full h-[420px] object-cover"
+                  className="w-full h-64 sm:h-80 lg:h-[420px] object-cover"
                 />
               </div>
 
               {/* Floating quote card */}
               <div
-                className="absolute -bottom-8 -right-4 lg:right-0 bg-white rounded-2xl p-8 shadow-card-hover z-20 w-72 border border-black/5"
+                className="relative sm:absolute sm:-bottom-8 sm:-right-4 lg:right-0 bg-white rounded-2xl p-7 sm:p-8 shadow-card-hover z-20 w-full sm:w-72 border border-black/5 mt-6 sm:mt-0"
               >
                 <div
                   className="font-serif mb-5 leading-none"
@@ -67,7 +67,7 @@ export default function ApproachSection() {
                 <div className="flex items-center gap-3">
                   <div className="gold-divider" />
                   <span className="font-sans text-[10px] uppercase tracking-[0.18em] text-body font-semibold">
-                    Rishil Shah, Founder & CA
+                    Rishil Sharma, Founder & CA
                   </span>
                 </div>
               </div>

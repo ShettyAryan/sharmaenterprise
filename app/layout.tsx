@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import "./globals.css";
+import NextTopLoader from "nextjs-toploader";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -30,7 +31,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${cormorant.variable} ${dmSans.variable}`}>
-      <body>{children}</body>
+      <body>
+        <NextTopLoader
+          color="#C9A84C"
+          height={2}
+          showSpinner={false}
+          easing="ease"
+          speed={250}
+          shadow="0 0 12px rgba(201,168,76,0.35)"
+        />
+        {children}
+      </body>
     </html>
   );
 }

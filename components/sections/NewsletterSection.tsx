@@ -35,7 +35,7 @@ export default function NewsletterSection() {
           </div>
 
           {!submitted ? (
-            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 w-full md:w-auto md:min-w-[380px]">
+            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 w-full md:w-auto md:min-w-[340px] lg:min-w-[380px]">
               <input
                 type="email"
                 value={email}

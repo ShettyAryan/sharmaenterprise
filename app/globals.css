@@ -195,3 +195,17 @@ body {
   transform: translateY(0) scaleY(1);
   pointer-events: all;
 }
+
+/* ── Loading ── */
+@keyframes loadingBar {
+  0% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(240%);
+  }
+}
+
+.animate-loading-bar {
+  animation: loadingBar 1.05s ease-in-out infinite;
+}
