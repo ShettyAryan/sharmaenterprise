@@ -36,7 +36,7 @@ export default function ProductsSection() {
             <Link
               key={p.name}
               href={`/products/${p.slug}`}
-              className="bg-white rounded-2xl p-7 card-base group block"
+              className="bg-white rounded-2xl p-7 card-base group flex flex-col h-full"
               style={{ transitionDelay: `${i * 50}ms` }}
             >
               <div className="mb-5">
@@ -46,7 +46,7 @@ export default function ProductsSection() {
                 {p.name}
               </h3>
               <p className="font-sans text-body text-xs leading-relaxed">{p.description}</p>
-              <div className="mt-5 text-navy-light font-sans text-[11px] font-bold uppercase tracking-[0.14em] group-hover:gap-2 transition-all inline-flex items-center gap-1">
+              <div className="mt-auto pt-5 text-navy-light font-sans text-[11px] font-bold uppercase tracking-[0.14em] group-hover:gap-2 transition-all inline-flex items-center gap-1">
                 Explore →
               </div>
             </Link>

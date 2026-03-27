@@ -33,7 +33,7 @@ export default function ServicesSection() {
         {services.map((s, i) => (
           <div
             key={s.slug}
-            className="bg-white p-9 rounded-2xl card-base group"
+            className="bg-white p-9 rounded-2xl card-base group flex flex-col h-full"
             style={{ transitionDelay: `${i * 60}ms` }}
           >
             <div className="mb-7">
@@ -48,7 +48,7 @@ export default function ServicesSection() {
             <p className="font-sans text-body text-sm leading-relaxed mb-8">{s.description}</p>
             <Link
               href={`/services/${s.slug}`}
-              className="font-sans text-[11px] font-bold uppercase tracking-[0.16em] text-navy-light hover:text-navy transition-colors inline-flex items-center gap-2"
+              className="mt-auto font-sans text-[11px] font-bold uppercase tracking-[0.16em] text-navy-light hover:text-navy transition-colors inline-flex items-center gap-2"
             >
               Explore <span>→</span>
             </Link>
